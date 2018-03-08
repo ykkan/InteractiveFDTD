@@ -8,7 +8,6 @@ class EMSolver{
 public:
     EMSolver(int n, double delT);
     void update();
-    void dump();
     int getSize(){return nSize;};
     double** getEz(){return ez;};
     void getTSBound(int& iMin, int& iMax, int& jMin, int& jMax);
