@@ -1,17 +1,17 @@
 # Interactive FDTD
 ## Introduction
-This is a dynamic, interactive GUI programm for simulating 2D electromagnetic scattering problem. The core algorithm
-implemented in this programm is finite difference time domain method (FDTD), which discretize Maxwell's equation in both
-spatial and time domain. This program was developed with c++ and Qt. The QCustoplot library is also used.
+This is a dynamic, interactive GUI programm for simulating 2D electromagnetic scattering phenomenon. The core algorithm is finite difference time domain method (FDTD), which discretize Maxwell's equation in both
+spatial and time domain. This program was developed with c++ and Qt. The qcustomplot library is also used to draw heatmap plot.
 
-Watch this video for 
+Watch this video to get some ideas of this program:
+[2D Scattering Phenomenon](https://www.youtube.com/watch?v=wrgAEh-n87I&feature=youtu.be)
 
 ## Class Diagram
 ![Class Diagram](/images/classDiagram.png)
 
-## Description for each components
+## Description for main components
 ### MainWindow:
-Contorller of the the programm.
+Contorller of the the program.
 
 ### Canvas:
 A interactive canvas generating heatmap plot of Ez field. The user can draw  arbitrary shape of media inside specific region of this Canvas.
