@@ -32,7 +32,7 @@ PlaneWaveSettingPanel::PlaneWaveSettingPanel(MainWindow* mainWindow){
     gridLayout->addWidget(sineWavePeriod, 1, 2, 1, 1);
 
     gridLayout->addWidget(gaussianButton, 2, 0, 1, 1);
-    gridLayout->addWidget(new QLabel(tr("Sigma: ")), 2, 1, 1, 1);
+    gridLayout->addWidget(new QLabel(tr("Duration(S.D.): ")), 2, 1, 1, 1);
     gridLayout->addWidget(gaussianWaveSigma, 2, 2, 1, 1);
 
     planeWaveBox = new QGroupBox();
