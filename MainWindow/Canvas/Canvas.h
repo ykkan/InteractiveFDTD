@@ -27,7 +27,7 @@ protected:
 private:
     void setMediaRegionBound();
     void initMediaColorMap();
-    
+
     EMSolver* emSolver;
 
     int nxCell;
@@ -35,6 +35,10 @@ private:
     double** fieldData;
     QCPColorMap* colorMap;
     QCPColorMap* mediaColorMap;
+
+    QCPItemRect* tsBoundary;
+    QCPItemText* totalFieldText;
+    QCPItemText* scatterFieldText;
 
     DrudeMedia* drudeMedia;
     int cursorSize;

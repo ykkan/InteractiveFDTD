@@ -35,6 +35,25 @@ Canvas::Canvas(MainWindow* mainWindow, EMSolver* solver){
     colorMap->setGradient(QCPColorGradient::gpSpectrum);
     QCPRange fieldDataRange = QCPRange(-1.5, 1.5);
     colorMap->setDataRange(fieldDataRange);
+
+    int tsIMin;
+    int tsIMax;
+    int tsJMin;
+    int tsJMax;
+    solver->getTSBound(tsIMin, tsIMax, tsJMin, tsJMax);
+    tsBoundary = new QCPItemRect(this);
+    tsBoundary->position("topLeft")->setCoords(tsIMin, tsJMax);
+    tsBoundary->position("bottomRight")->setCoords(tsIMax, tsJMin);
+
+    totalFieldText = new QCPItemText(this);
+    totalFieldText->setText("Total Field Region");
+    totalFieldText->position->setCoords(200, 310);
+    
+    scatterFieldText = new QCPItemText(this);
+    scatterFieldText->setText("Scattered Field Region");
+    scatterFieldText->position->setCoords(200, 330);
+
+
 }
 
 void Canvas::setMediaRegionBound(){
