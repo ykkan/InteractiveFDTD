@@ -27,3 +27,9 @@ Solver implementing the algorithm of 2D FDTD. We adapt Sullivan's FDTD formalism
 
 ### IncidenceField
 Simulating 1D plane wave. This plane wave will be used by EMSolver as incidence source.
+
+##Installation
+###Linux
+Move to MainWindow directory and type:
+qmake and make
+
